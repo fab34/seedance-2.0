@@ -9,7 +9,7 @@ tags:
   - dialogue
   - seedance-20
 metadata:
-  version: "5.4.3"
+  version: "5.4.4"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -23,7 +23,7 @@ metadata:
 
 Use this for dialogue, lip-sync, sound layers, music, ambience, beat-sync, audio-reference mapping, desync troubleshooting, or sound-driven visual timing. Audio should support the visible beat instead of becoming a second competing prompt.
 
-Load `[ref:audio-guide]` for detailed constraints, beat-sync, desync repair, audio-reference conflicts, and multi-character workarounds.
+Load `[ref:audio-guide]` for detailed constraints, beat-sync, desync repair, audio-reference conflicts, and multi-character workarounds. Load `[ref:audio-post-delivery]` when the user needs stems, M&E, dubbing, loudness, sync, mix, or delivery guidance.
 
 ## Core Rules
 
@@ -53,4 +53,4 @@ If audio and video references fight each other, mute the reference video before 
 
 ## Output Contract
 
-Return speaker map, quoted dialogue, sound layers, audio reference role, lip-sync constraints, and a compact prompt-ready audio block.
+Return speaker map, quoted dialogue, sound layers, audio reference role, lip-sync constraints, post/delivery notes if needed, and a compact prompt-ready audio block.

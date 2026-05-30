@@ -9,7 +9,7 @@ tags:
   - consistency
   - seedance-20
 metadata:
-  version: "5.4.3"
+  version: "5.4.4"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -22,6 +22,8 @@ metadata:
 # seedance-characters
 
 Use this for identity, consistency, multi-character blocking, wardrobe continuity, hand safety, expression control, and likeness-sensitive character guidance. Character prompting must remove ambiguity before adding style.
+
+Load `[ref:shot-list-continuity]` when character identity, wardrobe, props, eyeline, screen direction, or emotional state must survive across multiple shots.
 
 ## Character Contract
 

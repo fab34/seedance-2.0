@@ -9,7 +9,7 @@ tags:
   - brief
   - seedance-20
 metadata:
-  version: "5.4.3"
+  version: "5.4.4"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -28,10 +28,11 @@ Use this as the full director interview when the user has a rough idea rather th
 1. Build a safe draft premise immediately from the user input.
 2. Ask only the missing questions that materially affect the prompt: subject, action, reference assets, camera feel, emotional direction, duration, and risk constraints.
 3. Identify the genre path: product, lifestyle, drama, music video, landscape, commercial, animation, UGC, or experimental.
-4. End with a concise creative brief and route to `[skill:seedance-prompt]` or `[skill:seedance-prompt-short]`.
+4. If the user is a filmmaker, agency, producer, editor, localization team, or client-review owner, load `[ref:pro-filmmaking-standards]` and collect deliverables, territory, aspect ratio, approval owner, rights, and post/delivery needs.
+5. End with a concise creative brief and route to `[skill:seedance-prompt]`, `[skill:seedance-prompt-short]`, or `[skill:seedance-pipeline]`.
 
 ## Output Contract
 
-Return: concept summary, reference asset request, core scene, mood, camera intent, sound intent, safety notes, and next prompt path.
+Return: concept summary, production phase, reference asset request, core scene, mood, camera intent, sound intent, safety/rights notes, deliverables if known, and next prompt path.
 
 Do not ask a long questionnaire when the user already supplied enough information to write the prompt.

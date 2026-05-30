@@ -6,17 +6,17 @@
 
 Text-to-video · Image-to-video · Video-to-video · Reference-to-video · Audio-aware prompting · Copyright-safe rewrites · Agent Skills
 
-[![Version](https://img.shields.io/badge/version-5.4.3-111827?labelColor=0f172a)](#changelog)
+[![Version](https://img.shields.io/badge/version-5.4.4-111827?labelColor=0f172a)](#changelog)
 [![Skills](https://img.shields.io/badge/sub--skills-23-0ea5e9?labelColor=0f172a)](#skill-map)
-[![References](https://img.shields.io/badge/references-32-8b5cf6?labelColor=0f172a)](#reference-library)
-[![Evals](https://img.shields.io/badge/evals-43-22c55e?labelColor=0f172a)](#validation)
+[![References](https://img.shields.io/badge/references-40-8b5cf6?labelColor=0f172a)](#reference-library)
+[![Evals](https://img.shields.io/badge/evals-51-22c55e?labelColor=0f172a)](#validation)
 [![License](https://img.shields.io/badge/license-MIT-f59e0b?labelColor=0f172a)](LICENSE)
 
 Author: [Iamemily2050 (@iamemily2050)](https://github.com/Emily2040) · [Instagram](https://instagram.com/iamemily2050) · [X](https://x.com/iamemily2050) · [Website](https://iamemily2050.com)
 
 Platform context: [ByteDance Seedance 2.0](https://seed.bytedance.com/en/seedance2_0) · Dreamina · Jimeng · Doubao · [Volcengine Ark](https://www.volcengine.com/docs/82379/2291680?lang=zh) · [BytePlus ModelArk](https://docs.byteplus.com/en/docs/ModelArk/2291680) · [Runway Seedance 2](https://docs.dev.runwayml.com/guides/seedance/)
 
-Updated: **2026-05-30** · **v5.4.3 cinematic infographic refresh, multilingual community examples, and safe mixed-language repair patterns**
+Updated: **2026-05-30** · **v5.4.4 professional filmmaker workflow expansion**
 
 ---
 
@@ -36,10 +36,28 @@ This skill package turns Seedance 2.0 work into a repeatable assistant workflow:
 - Keeps model and platform claims source-dated so API, pricing, region, quota, and model-ID details are not guessed.
 - Provides deeper multilingual cinematic vocabulary in Chinese, Japanese, Korean, Spanish, and Russian, including role binding, first/last-frame phrasing, edit/extend wording, safety wording, and audio cues.
 - Adds original community-informed examples for Chinese-English, Russian-English, Japanese-English, Korean-English, and Spanish-English prompt structures.
+- Adds professional filmmaker workflows for treatment-to-shot-list planning, shot contracts, continuity ledgers, ACES/color handoff, audio post, subtitles/localization, aspect-ratio variants, campaign cutdowns, delivery/QC, and client review packets.
 - Handles safe false-positive repairs by clarifying benign production context, not by hiding unsafe intent.
 - Rewrites unsafe celebrity, protected IP, private-person, brand, logo, song, or voice requests into safer creative equivalents.
 - Diagnoses failed outputs with concrete repair levers: camera, lighting, motion, reference role, duration, framing, audio, or safety wording.
 - Ships validation scripts, eval cases, source data, and design checks so maintainers can review changes before release.
+
+## Professional Filmmaker Scope
+
+This package is designed for working film and commercial teams, not only for casual prompt writing. It can help an agent produce the artifact the role actually needs:
+
+| Role | What the skill should produce |
+|---|---|
+| Director | treatment, scene beat, performance intent, coverage, shot endpoint, review notes |
+| Cinematographer / DP | shot contract, shot size, lens feel, camera support, movement, blocking, lighting continuity |
+| Producer / agency | client brief, rights map, approval gates, campaign variants, risk log, review packet |
+| Editor | selects plan, edit/extend decision, continuity handoff, handles, textless needs, conform notes |
+| Colorist | color intent, ACES-aware handoff, show-look notes, HDR/SDR caveats, product-color checks |
+| Sound team | dialogue map, ambience/SFX/music layers, sync cues, stems, M&E, dubbing and loudness notes |
+| Localization team | subtitles, SDH captions, forced narratives, dubbing guide, market copy, textless plates |
+| Delivery/QC | frame rate, aspect ratio, crop, color, loudness, captions, metadata, naming, human QC checklist |
+
+For these requests, the skill should not stop at a single prompt. It should return the production object first, then the Seedance prompt or prompt batch that fits inside that plan.
 
 ## Start Here
 
@@ -52,6 +70,9 @@ This skill package turns Seedance 2.0 work into a repeatable assistant workflow:
 | “Use this as first frame and that as final frame.” | [`first-last-frame-guide`](references/first-last-frame-guide.md) | A continuous transition with endpoint locks. |
 | “It failed or looks bad.” | [`seedance-troubleshoot`](skills/seedance-troubleshoot/SKILL.md) | A root-cause diagnosis and repaired prompt. |
 | “This uses a character, brand, celebrity, or real person.” | [`seedance-copyright`](skills/seedance-copyright/SKILL.md) | A safer rewrite preserving the creative function. |
+| “I need this for a film, client, campaign, or delivery.” | [`pro-filmmaking-standards`](references/pro-filmmaking-standards.md) | A professional workflow plan, role-specific artifact, and prompt path. |
+| “Turn this treatment into shots.” | [`shot-list-continuity`](references/shot-list-continuity.md) | Shot list, continuity ledger, and prompt batch structure. |
+| “This needs subtitles, dubbing, color, sound, or QC.” | [`delivery-qc`](references/delivery-qc.md) | Post, localization, audio, color, and delivery checks. |
 | “I need API, Runway, pricing, model ID, or production workflow guidance.” | [`api-workflow`](references/api-workflow.md) | A source-gated operational checklist. |
 | “Is this Seedance Pro/Fast/V2?” | [`model-name-map`](references/model-name-map.md) | Source-dated naming and surface caveats. |
 | “I want Chinese/Russian/Japanese/Korean/Spanish or mixed-language prompt examples.” | [`multilingual-community-examples`](references/multilingual-community-examples.md) | Safe community-informed structures and false-positive repair patterns. |
@@ -76,14 +97,16 @@ The v5.4 release line adds a dated research layer for safer data mining and plat
 - [`model-name-map.md`](references/model-name-map.md) prevents `Seedance 2.0`, `Seedance 2.0 Fast`, `Seedance V2`, and ambiguous Pro labels from being mixed together.
 - [`community-source-methodology.md`](references/community-source-methodology.md) explains how to mine public prompt corpora without copying unsafe examples.
 - [`multilingual-community-examples.md`](references/multilingual-community-examples.md) captures safe mixed-language and localized prompt structures from community pattern mining.
+- [`pro-filmmaking-standards.md`](references/pro-filmmaking-standards.md) adds industry workflow boundaries for shot lists, continuity, color, audio, localization, and delivery.
 
 ## Operating System At A Glance
 
 ![Seedance 2.0 Skill OS infographic: source registry, prompt router, multimodal references, safety gates, and eval loop](assets/skill-os-infographic.png)
 
-The visual map is intentionally text-light so it remains clean in GitHub and reusable in docs. It represents the five lanes this package keeps separate:
+The visual map is intentionally text-light so it remains clean in GitHub and reusable in docs. It represents the six lanes this package keeps separate:
 
 - Research sources: dated official, academic, platform, and community evidence.
+- Production spine: brief, shot list, continuity, post handoff, localization, and delivery/QC.
 - Prompt router: interview, prompt writing, compression, recipes, and troubleshooting.
 - Multimodal references: image, video, audio, first-frame, last-frame, and role-bound assets.
 - Safety gates: IP, likeness, voice, brand, real-person, filter, and platform-policy checks.
@@ -140,6 +163,14 @@ The visual map is intentionally text-light so it remains clean in GitHub and reu
 | [`research-2026-05-30.md`](references/research-2026-05-30.md) | Dated source and field-observation snapshot. |
 | [`agent-compatibility.md`](references/agent-compatibility.md) | Agent Skills structure, Codex compatibility, and packaging notes. |
 | [`api-workflow.md`](references/api-workflow.md) | Volcengine, BytePlus, Runway, async task, reference-file, pricing, and production workflow checklist. |
+| [`pro-filmmaking-standards.md`](references/pro-filmmaking-standards.md) | Professional production spine and source boundaries for film, commercial, post, localization, and delivery work. |
+| [`cinematography-shot-language.md`](references/cinematography-shot-language.md) | Shot contracts, shot size, lens feel, camera support, movement, blocking, and coverage language. |
+| [`shot-list-continuity.md`](references/shot-list-continuity.md) | Treatment-to-shot-list workflow, continuity ledger, and professional handoff fields. |
+| [`color-pipeline-aces.md`](references/color-pipeline-aces.md) | ACES-aware color intent, show-look notes, HDR/SDR handoff, and color QC boundaries. |
+| [`aspect-ratio-delivery.md`](references/aspect-ratio-delivery.md) | Creative framing, delivery containers, social cutdowns, safe areas, and textless/version planning. |
+| [`subtitles-localization.md`](references/subtitles-localization.md) | Subtitle, SDH, forced narrative, dubbing, textless, and cultural localization planning. |
+| [`audio-post-delivery.md`](references/audio-post-delivery.md) | Dialogue, SFX, music, stems, M&E, loudness, dubbing, and sync handoff guidance. |
+| [`delivery-qc.md`](references/delivery-qc.md) | Professional preflight for picture, color, audio, captions, rights, metadata, versioning, and human QC. |
 | [`examples-by-mode.md`](references/examples-by-mode.md) | Mode-specific prompt examples for T2V, I2V, V2V, R2V, FLF2V, edit, extend, and troubleshooting. |
 | [`multilingual-community-examples.md`](references/multilingual-community-examples.md) | Original Chinese, Russian, Japanese, Korean, Spanish, and mixed-language prompt structures from safe community pattern mining. |
 | [`platform-surface-matrix.md`](references/platform-surface-matrix.md) | Model-vs-surface claim boundaries. |
@@ -214,7 +245,7 @@ The v5.4 front page uses a generated cinematic bitmap hero, a generated operatin
 
 ## Changelog
 
-See [`CHANGELOG.md`](CHANGELOG.md). Current release: **v5.4.3**.
+See [`CHANGELOG.md`](CHANGELOG.md). Current release: **v5.4.4**.
 
 ## License
 

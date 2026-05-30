@@ -8,7 +8,7 @@ tags:
   - video-generation
   - seedance-20
 metadata:
-  version: "5.4.3"
+  version: "5.4.4"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -22,7 +22,7 @@ metadata:
 
 Build production-ready Seedance prompts from clear concepts or supplied reference assets. Treat the prompt as a short shooting brief: it must say what changes on screen, what the camera does, what the light and sound contribute, and what must stay stable. Keep final prompts under the platform prompt budget and remove filler before delivery.
 
-Load `[ref:quick-ref]` for the checklist, `[ref:reference-workflow]` for multimodal references, `[ref:i2v-guide]` for image-to-video, `[ref:first-last-frame-guide]` for first/last-frame work, `[ref:examples-by-mode]` when examples are useful, and `[ref:multilingual-community-examples]` for Chinese/Russian/Japanese/Korean/Spanish or mixed-language prompts.
+Load `[ref:quick-ref]` for the checklist, `[ref:reference-workflow]` for multimodal references, `[ref:i2v-guide]` for image-to-video, `[ref:first-last-frame-guide]` for first/last-frame work, `[ref:examples-by-mode]` when examples are useful, `[ref:shot-list-continuity]` for multi-shot professional plans, and `[ref:multilingual-community-examples]` for Chinese/Russian/Japanese/Korean/Spanish or mixed-language prompts.
 
 ## Director Formula
 
@@ -68,6 +68,7 @@ Return:
 2. Reference role map, if any.
 3. Final prompt under 2000 characters.
 4. Optional Chinese compressed version when useful.
-5. Safety or copyright note when relevant.
+5. Shot-list or delivery note when the prompt belongs to a professional sequence.
+6. Safety or copyright note when relevant.
 
 Before finalizing, run an anti-slop pass and remove vague quality boosters.

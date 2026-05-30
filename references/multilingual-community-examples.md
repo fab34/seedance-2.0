@@ -113,3 +113,35 @@ When a multilingual prompt fails, repair in this order:
 4. Keep dialogue in the speaker language, but keep camera and constraints in the clearest language for the operator.
 5. Reduce the prompt to one visible beat and one camera move.
 6. If it still blocks, change the creative surface, not just the language.
+
+## Global Production Handoff Patterns
+
+Use these when the collaborator is not only prompting, but preparing a shot for a director, editor, localization team, or client.
+
+| Language context | Production-safe structure |
+|---|---|
+| Chinese-English shot list | `Shot ID + @图/@视频 role map + action endpoint + Camera in English + 后期备注: textless/localized copy in post` |
+| Japanese review notes | `ショット目的 + 保持する要素 + 修正する動き + postで追加する字幕/コピー` |
+| Korean dialogue handoff | `대사 + locked framing + speaker tag + 자막/더빙은 후반 작업에서 처리` |
+| Spanish client versioning | `versión 15s/9:16 + producto protegido + texto en post + subtítulos separados` |
+| Russian delivery note | `роль референса + что не менять + textless plate + отдельные субтитры/озвучка` |
+
+### Chinese-English client shot
+
+`S01_SH02: @图1锁定产品logo、标签、瓶身比例；@视频1仅参考 slow slider rhythm，不复制环境。产品在黑色亚克力台面上，暖色条形光扫过瓶身，最后停在正三分之二角度。Camera: locked macro-to-medium push-in. Post: no generated text; add Chinese/English campaign copy in edit.`
+
+### Japanese localization handoff
+
+`[Image1]の人物と衣装を保持。Character A says "I am ready" in English, locked medium close-up, no head turn. Post note: 日本語字幕と吹替は後処理で作成、画面下部を空ける、焼き込み文字なし。`
+
+### Korean social cutdown
+
+`9:16 모바일 컷다운, original product centered, no edge-critical action. Camera: slow push-in only. Sound: one clean product click. Post: 한국어 자막과 법적 문구는 편집에서 추가, textless plate required.`
+
+### Spanish delivery note
+
+`Versión 15s horizontal y 6s vertical. [Image1] conserva producto, etiqueta y color. No texto generado dentro de la imagen; entregar placa limpia para copy localizado. Subtítulos, claims y CTA se agregan en postproducción.`
+
+### Russian QC handoff
+
+`[Image1] сохраняет оригинального персонажа и костюм; [Audio1] задает только темп. Камера фиксированная, средний план, один короткий жест. Post/QC: отдельные русские субтитры, textless version, проверить синхрон губ и отсутствие изменения лица.`

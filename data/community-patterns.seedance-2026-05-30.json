@@ -204,6 +204,42 @@
       "risk_flags": ["ip-risk", "brand-risk", "real-person-risk"],
       "features": ["large raw prompt gallery", "mixed languages", "dialogue and audio blocks", "many unsafe identity or brand surfaces"],
       "safe_use": "Classify and rewrite into original authorized examples; extract structure only."
+    },
+    {
+      "id": "professional-shot-contract",
+      "label": "safe-structure-only",
+      "source_url": "https://theasc.com/article/shot-craft-camera-movement/",
+      "source_language": "en",
+      "surface": "professional filmmaking",
+      "claim_status": "field-observed",
+      "confidence": "medium",
+      "risk_flags": [],
+      "features": ["shot size", "angle", "lens feel", "camera move", "start frame", "endpoint", "fragile anchors"],
+      "safe_use": "Use to convert vague cinematic language into one professional shot contract per Seedance clip."
+    },
+    {
+      "id": "global-localization-textless",
+      "label": "safe-structure-only",
+      "source_url": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/215758617-Timed-Text-Style-Guide-General-Requirements",
+      "source_language": "multi",
+      "surface": "professional localization",
+      "claim_status": "field-observed",
+      "confidence": "medium",
+      "risk_flags": [],
+      "features": ["textless plate", "subtitles in post", "dubbing guide", "M&E", "caption-safe framing"],
+      "safe_use": "Use for global filmmaker deliverables instead of asking Seedance to burn in small multilingual text."
+    },
+    {
+      "id": "campaign-cutdown-matrix",
+      "label": "safe-structure-only",
+      "source_url": "https://www.thedpp.com/specs/",
+      "source_language": "en",
+      "surface": "professional delivery",
+      "claim_status": "field-observed",
+      "confidence": "medium",
+      "risk_flags": [],
+      "features": ["30s hero", "15s cutdown", "6s bumper", "9:16 vertical", "1:1 feed", "textless localized master"],
+      "safe_use": "Use to plan commercial variants and delivery notes while keeping platform specs recheck-required."
     }
   ]
 }

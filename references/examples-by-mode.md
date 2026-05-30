@@ -34,6 +34,26 @@ Use these as safe structures, not fixed scripts. They are original examples and 
 
 `Use the returned last frame from the previous clip as the new first frame. Preserve character, wardrobe, light direction, and camera angle. Continue only one action: smoke thins around the doorway and the character lowers the lantern. No new scene, no new camera move, no extra VFX.`
 
+## Professional Shot Contract
+
+**Brief:** 15s product film, 16:9 hero plus 9:16 cutdown, textless plate required.
+
+| Shot | Purpose | Seedance prompt spine |
+|---|---|---|
+| S01 | establish use context | `Wide 16:9 kitchen counter at dawn, original athlete places the bottle beside running shoes. Camera: locked medium-wide, slight push-in, warm window light, quiet room tone. End frame holds product left of center for vertical crop.` |
+| S02 | material proof | `[Image1] is the product reference; preserve logo, label, cap, color, and geometry exactly. Locked macro shot, condensation beads merge and slide down glass, narrow warm strip light sweeps once. SFX: single glass tick at endpoint.` |
+| S03 | packshot | `[Image1] product preserved exactly, black acrylic reflection, slow slider from silhouette to front three-quarter hero angle. No generated text; leave clean right-side negative space for localized copy in post.` |
+
+Continuity anchors: same bottle orientation, label color, dawn palette, clean counter surface, no burned-in text. Delivery notes: make textless 16:9 and 9:16 versions; add claims/captions in post.
+
+## Localization Handoff Example
+
+`Character A stands still in a locked medium close-up and says "We start now." Spoken language: English. Post: create subtitles in Spanish, Japanese, Korean, Russian, and Chinese; keep lower third clear; no burned-in captions; preserve textless plate and room tone for dubbing/M&E.`
+
+## Delivery QC Example
+
+`Before delivery: verify frame rate, aspect ratio, crop-safe product placement, product color, no logo drift, dialogue sync, loudness target per buyer spec, subtitle placement, textless export, rights notes for Image1/Audio1, and human watch-through at normal speed.`
+
 ## Multilingual Community-Informed Examples
 
 These examples are original structures distilled from public multilingual practice. They do not copy community prompt text.

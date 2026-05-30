@@ -1,5 +1,5 @@
 {
-  "version": "5.4.3",
+  "version": "5.4.4",
   "updated": "2026-05-30",
   "cases": [
     {
@@ -667,6 +667,138 @@
       "failure_mode": "front page remains generic or SVG-only",
       "skills_expected_to_activate": [
         "seedance-pipeline"
+      ]
+    },
+    {
+      "id": "professional_shot_contract",
+      "prompt": "I am a DP. Turn this coffee commercial idea into one precise Seedance shot: a hand sets the cup down and steam reveals the logo.",
+      "expected_output": "Professional shot contract with shot size, angle, lens feel, camera move, subject relation, start/end frame, action endpoint, and fragile anchors.",
+      "assertions": [
+        "includes shot size angle lens feel camera move and endpoint",
+        "protects logo hand and product geometry as fragile anchors",
+        "does not answer with generic cinematic adjectives",
+        "routes to cinematography shot-language reference"
+      ],
+      "failure_mode": "generic camera prompt instead of a DP shot contract",
+      "skills_expected_to_activate": [
+        "seedance-camera",
+        "seedance-prompt"
+      ]
+    },
+    {
+      "id": "multi_shot_continuity_handoff",
+      "prompt": "Turn this short film beat into four Seedance shots and keep wardrobe, screen direction, eyeline, prop, and lighting continuous.",
+      "expected_output": "Shot list and continuity ledger with one endpoint per shot and handoff notes.",
+      "assertions": [
+        "creates shot IDs and purpose for each shot",
+        "tracks wardrobe props eyeline screen direction and lighting state",
+        "uses final-frame or start-frame handoff language",
+        "does not cram the whole scene into one overloaded prompt"
+      ],
+      "failure_mode": "multi-shot continuity drift",
+      "skills_expected_to_activate": [
+        "seedance-pipeline",
+        "seedance-recipes",
+        "seedance-characters",
+        "seedance-camera"
+      ]
+    },
+    {
+      "id": "aces_color_pipeline_no_hallucination",
+      "prompt": "Make this Seedance sequence ACES compliant and ready for HDR and SDR delivery.",
+      "expected_output": "Two-layer answer: prompt-level color intent plus ACES-aware post handoff, without claiming Seedance output itself is ACES certified.",
+      "assertions": [
+        "separates prompt color look from post color management",
+        "mentions ACES or AMF as handoff metadata not a prompt guarantee",
+        "tracks HDR SDR output transform or trim assumptions",
+        "does not hallucinate certification from the generated clip"
+      ],
+      "failure_mode": "pretends prompt wording guarantees ACES compliance",
+      "skills_expected_to_activate": [
+        "seedance-lighting",
+        "seedance-pipeline"
+      ]
+    },
+    {
+      "id": "aspect_ratio_delivery_surface",
+      "prompt": "We need 16:9, 9:16, 1:1, and 2.39 versions of the same product reveal.",
+      "expected_output": "Aspect-ratio and delivery-surface plan separating creative framing, crop strategy, safe areas, and version naming.",
+      "assertions": [
+        "separates creative aspect ratio from delivery container",
+        "protects product and logo from edge crops",
+        "recommends textless or post-added typography for variants",
+        "does not assume every Seedance surface supports every ratio"
+      ],
+      "failure_mode": "single prompt ignores variant framing and delivery constraints",
+      "skills_expected_to_activate": [
+        "seedance-pipeline",
+        "seedance-recipes",
+        "seedance-camera"
+      ]
+    },
+    {
+      "id": "subtitle_localization_accessibility",
+      "prompt": "Prepare this dialogue scene for Spanish, Japanese, Korean, Russian, and Chinese subtitles plus SDH captions.",
+      "expected_output": "Localization plan with subtitle/SDH/forced-narrative boundaries, caption-safe framing, textless plate, and no burned-in generated text.",
+      "assertions": [
+        "distinguishes subtitles SDH forced narrative and dubbing",
+        "keeps lower third or safe area clear for captions",
+        "requires textless plate or post-added text",
+        "does not ask Seedance to generate final tiny multilingual subtitles"
+      ],
+      "failure_mode": "treats generated on-screen text as professional subtitles",
+      "skills_expected_to_activate": [
+        "seedance-audio",
+        "seedance-pipeline",
+        "seedance-prompt"
+      ]
+    },
+    {
+      "id": "audio_post_loudness_stems",
+      "prompt": "This ad needs dialogue, SFX, music, M&E, stems, and a loudness check for delivery.",
+      "expected_output": "Audio post plan separating prompt-level sound cues from final mix, stems, M&E, dubbing, sync, and loudness verification.",
+      "assertions": [
+        "includes dialogue ambience SFX music or silence layers",
+        "plans stems or M&E when localization is needed",
+        "states loudness target must follow buyer or platform spec",
+        "does not promise Seedance creates a certified final mix"
+      ],
+      "failure_mode": "confuses prompt audio with final delivery mix",
+      "skills_expected_to_activate": [
+        "seedance-audio",
+        "seedance-pipeline"
+      ]
+    },
+    {
+      "id": "delivery_qc_preflight",
+      "prompt": "Before I send the Seedance spot to a client, give me a final QC checklist.",
+      "expected_output": "Delivery preflight covering picture, color, audio, captions, continuity, rights, metadata, versioning, naming, and human review.",
+      "assertions": [
+        "checks picture color audio text continuity rights metadata and versioning",
+        "includes human watch-through at normal speed",
+        "routes failures to edit color audio localization or regeneration appropriately",
+        "does not mark prompt output done without QC"
+      ],
+      "failure_mode": "client delivery without preflight",
+      "skills_expected_to_activate": [
+        "seedance-pipeline",
+        "seedance-troubleshoot"
+      ]
+    },
+    {
+      "id": "imf_localization_versioning",
+      "prompt": "Plan masters for a global campaign: hero, 15s cutdown, vertical, textless, localized subtitles, and archive metadata.",
+      "expected_output": "Versioning and delivery plan for hero/cutdown/social/textless/localized/archive assets with spec caveats.",
+      "assertions": [
+        "creates a campaign version matrix",
+        "includes textless and localized subtitle or dubbing deliverables",
+        "records model surface prompt version rights and approval metadata",
+        "states contracted platform or buyer specs must be rechecked"
+      ],
+      "failure_mode": "no localization or version-control plan for global campaign",
+      "skills_expected_to_activate": [
+        "seedance-pipeline",
+        "seedance-recipes"
       ]
     }
   ]

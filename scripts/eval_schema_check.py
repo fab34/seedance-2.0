@@ -42,6 +42,14 @@ REQUIRED_IDS = {
     "extension_quality_degradation",
     "multilingual_false_positive_repair",
     "cinematic_infographic_front_page",
+    "professional_shot_contract",
+    "multi_shot_continuity_handoff",
+    "aces_color_pipeline_no_hallucination",
+    "aspect_ratio_delivery_surface",
+    "subtitle_localization_accessibility",
+    "audio_post_loudness_stems",
+    "delivery_qc_preflight",
+    "imf_localization_versioning",
 }
 
 

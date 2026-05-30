@@ -2,6 +2,21 @@
 
 All notable changes to this project are documented here.
 
+## [5.4.4] — 2026-05-30
+
+### Added
+
+- Added a professional filmmaker reference layer: `pro-filmmaking-standards.md`, `cinematography-shot-language.md`, `shot-list-continuity.md`, `color-pipeline-aces.md`, `aspect-ratio-delivery.md`, `subtitles-localization.md`, `audio-post-delivery.md`, and `delivery-qc.md`.
+- Added README professional scope for directors, DPs, producers, editors, colorists, sound teams, localization teams, and delivery/QC teams.
+- Added eval coverage for shot contracts, multi-shot continuity, ACES/color handoff, aspect-ratio delivery, subtitles/localization, audio post, QC preflight, and global campaign versioning.
+- Added professional workflow source records and community-pattern records for shot contracts, textless localization, and campaign cutdown matrices.
+
+### Changed
+
+- Routed the root skill, pipeline, interview, prompt, camera, motion, characters, lighting, audio, recipes, and troubleshooting skills into the new professional production references.
+- Expanded JSON schema support for production phase, shot lists, continuity anchors, color pipeline, subtitle plan, audio deliverables, delivery metadata, and QC checks.
+- Expanded examples with professional shot-contract, localization-handoff, and delivery-QC examples.
+
 ## [5.4.3] — 2026-05-30
 
 ### Added

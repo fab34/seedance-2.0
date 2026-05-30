@@ -2,6 +2,8 @@
 
 Use this reference for detailed audio, dialogue, beat-sync, ambience, and lip-sync workflows. Keep audio roles explicit and avoid promising exact platform behavior unless the active surface documents it.
 
+For professional audio post, stems, M&E, dubbing, loudness, or delivery checks, also load `audio-post-delivery.md`.
+
 ## Dialogue
 
 - Keep lines short, preferably one sentence per speaker turn.
@@ -45,3 +47,7 @@ Use separate speaker turns when reliability matters. For two-person exchanges, g
 - Overbusy mix: choose ambience plus one key SFX; remove music if dialogue matters.
 - Lip-sync drift: use a locked medium close-up, no head turn, short quoted line, and simple expression.
 - Audio-reference conflict: mute the video reference, remove competing SFX/music, and describe one visible event per beat.
+
+## Post Handoff Boundary
+
+Prompt audio can shape performance and visible timing, but final mixes need post-production review. For paid or delivery work, record spoken language, subtitle/dubbing needs, M&E/stem needs, sync cues, and buyer loudness target separately from the prompt.

@@ -9,7 +9,7 @@ tags:
   - physics
   - seedance-20
 metadata:
-  version: "5.4.3"
+  version: "5.4.4"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -23,7 +23,7 @@ metadata:
 
 Use physical verbs and consequences. Motion should be observable on screen, timed within the clip, and assigned to a subject or object. Prefer one strong action with a visible endpoint over several vague actions competing for attention.
 
-Load `[ref:reference-workflow]` for video-motion references and `[ref:examples-by-mode]` for safe edit, extend, and R2V patterns.
+Load `[ref:reference-workflow]` for video-motion references, `[ref:shot-list-continuity]` for action handoffs across shots, and `[ref:examples-by-mode]` for safe edit, extend, and R2V patterns.
 
 ## Motion Contract
 

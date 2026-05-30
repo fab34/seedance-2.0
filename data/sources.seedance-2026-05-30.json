@@ -494,6 +494,114 @@
       "volatile_fields": ["language_support", "example_quality", "surface_behavior"],
       "repo_actions": ["add safe mixed-language repair boundary", "add multilingual examples"],
       "do_not_use_for": ["official language support list", "filter behavior guarantees"]
+    },
+    {
+      "id": "asc-studiobinder-shot-language-2026-05",
+      "title": "Professional Shot Language And Shot List Fields",
+      "url": "https://theasc.com/article/shot-craft-camera-movement/",
+      "language": "en",
+      "source_type": "professional_workflow",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["filmmaking", "cinematography"],
+      "claims": [
+        "professional camera language benefits from shot size, angle, camera movement, and subject relationship",
+        "shot lists should preserve production intent and handoff fields"
+      ],
+      "volatile_fields": ["article_availability"],
+      "repo_actions": ["add cinematography shot contract reference", "add professional shot eval"],
+      "do_not_use_for": ["Seedance platform capability"]
+    },
+    {
+      "id": "screenskills-script-supervisor-continuity-2026-05",
+      "title": "Script Supervisor Continuity Practice",
+      "url": "https://www.screenskills.com/job-profiles/browse/film-and-tv-drama/technical/script-supervisor-film-and-tv-drama/",
+      "language": "en",
+      "source_type": "professional_workflow",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["filmmaking", "continuity"],
+      "claims": [
+        "continuity work tracks action, dialogue, camera, props, wardrobe, and scene consistency",
+        "AI video shot plans should keep a continuity ledger across prompts"
+      ],
+      "volatile_fields": ["article_availability"],
+      "repo_actions": ["add shot-list continuity reference", "add multi-shot continuity eval"],
+      "do_not_use_for": ["Seedance model behavior guarantee"]
+    },
+    {
+      "id": "aces-color-management-2026-05",
+      "title": "ACES Overview And AMF Specification",
+      "url": "https://docs.acescentral.com/background/overview/",
+      "language": "en",
+      "source_type": "professional_standard",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "high",
+      "surfaces": ["color", "post"],
+      "claims": [
+        "ACES provides color-management vocabulary and metadata handoff concepts",
+        "AMF can carry ACES metadata through professional workflows"
+      ],
+      "volatile_fields": ["spec_version"],
+      "repo_actions": ["add color pipeline reference", "add ACES no-hallucination eval"],
+      "do_not_use_for": ["claiming Seedance output is ACES-certified"]
+    },
+    {
+      "id": "subtitles-localization-standards-2026-05",
+      "title": "Timed Text, WebVTT, And Caption Accessibility Sources",
+      "url": "https://partnerhelp.netflixstudios.com/hc/en-us/articles/215758617-Timed-Text-Style-Guide-General-Requirements",
+      "language": "en",
+      "source_type": "professional_standard",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["localization", "accessibility"],
+      "claims": [
+        "subtitles, SDH, forced narrative, and captions should be planned as post deliverables",
+        "generated burned-in text is not a substitute for professional timed text"
+      ],
+      "volatile_fields": ["buyer_requirements", "language_rules"],
+      "repo_actions": ["add subtitles localization reference", "add localization eval"],
+      "do_not_use_for": ["universal delivery requirement"]
+    },
+    {
+      "id": "audio-loudness-post-delivery-2026-05",
+      "title": "Professional Audio Loudness And Mix Delivery Sources",
+      "url": "https://www.itu.int/rec/R-REC-BS.1770",
+      "language": "en",
+      "source_type": "professional_standard",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["audio", "post", "delivery"],
+      "claims": [
+        "professional audio delivery requires loudness, sync, mix, and stem checks",
+        "M&E and stems should be planned when localization is required"
+      ],
+      "volatile_fields": ["buyer_targets", "spec_version"],
+      "repo_actions": ["add audio post delivery reference", "add loudness and stems eval"],
+      "do_not_use_for": ["claiming Seedance produces final compliant mixes"]
+    },
+    {
+      "id": "delivery-qc-imf-dpp-movielabs-2026-05",
+      "title": "Professional Delivery And QC Sources",
+      "url": "https://www.smpte.org/standards/st2067",
+      "language": "en",
+      "source_type": "professional_standard",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["delivery", "qc", "metadata"],
+      "claims": [
+        "professional delivery requires picture, audio, subtitles, metadata, naming, rights, and human QC checks",
+        "IMF/DCP/social delivery assumptions must be separated from Seedance prompt design"
+      ],
+      "volatile_fields": ["buyer_specs", "spec_version", "platform_requirements"],
+      "repo_actions": ["add delivery QC reference", "add delivery preflight eval"],
+      "do_not_use_for": ["universal buyer spec"]
     }
   ]
 }

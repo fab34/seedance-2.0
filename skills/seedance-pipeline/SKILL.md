@@ -9,7 +9,7 @@ tags:
   - integration
   - seedance-20
 metadata:
-  version: "5.4.3"
+  version: "5.4.4"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -27,17 +27,19 @@ Use this for operational workflows, APIs, web surfaces, post-production, and int
 
 Always load `[ref:api-status]` for current API and platform claims. Load `[ref:model-name-map]` when a user says Pro, Fast, V2, or a wrapper model ID. Do not rely on old release-status memory.
 Load `[ref:api-workflow]` for implementation planning, task lifecycle, Runway/Volcengine field differences, pricing caveats, upload handling, and production readiness.
+Load `[ref:pro-filmmaking-standards]` for professional film, commercial, agency, localization, post, and delivery workflows. Load `[ref:delivery-qc]` before saying an asset is delivery-ready.
 
 ## Workflow Split
 
 1. Web workflow: Dreamina/Jimeng surface, references, prompt, output review.
 2. API workflow: Volcengine, BytePlus, or Runway docs, model ID, auth, file handling, task creation, polling/querying, cancellation/deletion, task ledger, and retrieval.
-3. Post workflow: stitching, audio cleanup, captions, color, upscale, delivery.
-4. First/last-frame workflow: map first frame, last frame, transition action, identity locks, and ending target.
-5. Runway workflow: model `seedance2`, `runway://` uploads, audio-reference combination rules, plan/region caveats, and SDK type lag are Runway-specific.
-6. Community workflow: ComfyUI or unofficial nodes must be labeled community/unverified unless sourced.
-7. Corpus-mining workflow: classify sources before reuse; extract structure and vocabulary, not unsafe raw prompts.
+3. Professional production workflow: treatment, shot list, continuity ledger, reference rights map, review loop, post handoff, and delivery/QC.
+4. Post workflow: edit, conform, stitching, stabilization, audio cleanup, captions/subtitles, color, localization, versioning, textless, and delivery.
+5. First/last-frame workflow: map first frame, last frame, transition action, identity locks, and ending target.
+6. Runway workflow: model `seedance2`, `runway://` uploads, audio-reference combination rules, plan/region caveats, and SDK type lag are Runway-specific.
+7. Community workflow: ComfyUI or unofficial nodes must be labeled community/unverified unless sourced.
+8. Corpus-mining workflow: classify sources before reuse; extract structure and vocabulary, not unsafe raw prompts.
 
 ## Output Contract
 
-Return the workflow path, source status, required inputs, validation steps, and risks.
+Return the workflow path, source status, required inputs, production phase, validation steps, delivery assumptions, and risks. For professional jobs, include the next artifact to create: brief, shot list, continuity ledger, prompt batch, review packet, localization matrix, or QC preflight.

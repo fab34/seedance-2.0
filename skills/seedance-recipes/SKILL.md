@@ -9,7 +9,7 @@ tags:
   - recipes
   - seedance-20
 metadata:
-  version: "5.4.3"
+  version: "5.4.4"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -23,7 +23,7 @@ metadata:
 
 Use recipes as starting patterns, not rigid prompt templates. Pick the recipe that matches the user's outcome, then customize subject, action, camera, lighting, audio, and constraints. Recipes should preserve the one-beat discipline of a short clip.
 
-Load `[ref:genre-guides]` for genre patterns, `[ref:examples-by-mode]` when the user needs copy-ready examples, and `[ref:multilingual-community-examples]` when the recipe should reflect Chinese/Russian/Japanese/Korean/Spanish community-style structures.
+Load `[ref:genre-guides]` for genre patterns, `[ref:examples-by-mode]` when the user needs copy-ready examples, `[ref:shot-list-continuity]` for professional multi-shot sequences or commercials, and `[ref:multilingual-community-examples]` when the recipe should reflect Chinese/Russian/Japanese/Korean/Spanish community-style structures.
 
 ## Recipe Families
 
@@ -38,6 +38,7 @@ Load `[ref:genre-guides]` for genre patterns, `[ref:examples-by-mode]` when the 
 | Animation | Original characters and stylized motion. | `medium + shape language + palette + elastic or weighted motion` |
 | VFX | Transformations, particles, weather, energy. | `source + material behavior + interaction + dissipation endpoint` |
 | First/last frame | In-between transitions, product state changes, character pose targets. | `first frame + last frame + continuous transition + identity locks` |
+| Commercial campaign | 6/10/15/30s variants, vertical/social cutdowns, textless/localized masters. | `hook + product proof + end state + cutdown matrix + delivery notes` |
 
 ## Prompt Skeletons
 
@@ -57,4 +58,4 @@ If a user gives many goals, choose the recipe that protects the most fragile req
 
 ## Output Contract
 
-Return one selected recipe, why it fits, the customized prompt skeleton, and a compact final prompt.
+Return one selected recipe, why it fits, the customized prompt skeleton, compact final prompt, and campaign/delivery notes when relevant.

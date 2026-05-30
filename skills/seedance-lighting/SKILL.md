@@ -8,7 +8,7 @@ tags:
   - atmosphere
   - seedance-20
 metadata:
-  version: "5.4.3"
+  version: "5.4.4"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -21,6 +21,8 @@ metadata:
 # seedance-lighting
 
 Lighting should describe physical sources and transitions, not abstract beauty. A useful lighting prompt tells the model where the light comes from, its color temperature, how shadows behave, what atmosphere catches the light, and whether the light changes during the clip.
+
+Load `[ref:color-pipeline-aces]` when the user asks for ACES, HDR/SDR, show look, grade, LUT, CDL, product color, or professional color handoff.
 
 ## Lighting Contract
 

@@ -8,7 +8,7 @@ tags:
   - troubleshooting
   - seedance-20
 metadata:
-  version: "5.4.3"
+  version: "5.4.4"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -22,7 +22,7 @@ metadata:
 
 Diagnose failure before rewriting. Do not simply add more adjectives. Identify whether the failure came from mode mismatch, overload, ambiguity, fragile identity, unsafe wording, unsupported platform behavior, or missing preservation constraints.
 
-Load `[ref:field-observed-tips]`, `[ref:reference-workflow]`, and `[ref:api-workflow]` when the failure involves continuation, edit/extend, source clips, audio references, or platform-specific errors.
+Load `[ref:field-observed-tips]`, `[ref:reference-workflow]`, and `[ref:api-workflow]` when the failure involves continuation, edit/extend, source clips, audio references, or platform-specific errors. Load `[ref:shot-list-continuity]` for multi-shot drift and `[ref:delivery-qc]` for final-client or delivery failures.
 
 ## Diagnostic Tree
 
@@ -38,6 +38,7 @@ Load `[ref:field-observed-tips]`, `[ref:reference-workflow]`, and `[ref:api-work
 | Extension quality degrades | No last-frame anchor or too many new variables across continuations. | Use returned last frame as first frame and change one variable. |
 | Audio reference ignored | Competing video sound, no visual beat mapping, or unsupported combo. | Mute competing video and map one visible event to the beat. |
 | Text/logos break | Small text asked to move or be redrawn. | Keep text static, centered, and protected; animate light around it. |
+| Client QC fails | Prompt output treated as final delivery without post/QC. | Route to delivery preflight, post fix, or regenerate only the failing shot. |
 
 ## Repair Process
 
