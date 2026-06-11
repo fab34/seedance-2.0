@@ -848,7 +848,7 @@
     {
       "id": "wrong_model_craft_only",
       "prompt": "Write this chase scene as a Sora prompt, and include the Seedance reference tags so it looks right.",
-      "expected_output": "Offers general filmmaking craft and states plainly that Seedance syntax, specs, and surfaces do not apply to Sora, Veo, or Kling.",
+      "expected_output": "Root router activates, offers general filmmaking craft, and states plainly that Seedance syntax, specs, and surfaces do not apply to Sora, Veo, or Kling; no Seedance prompt sub-skill is loaded.",
       "assertions": [
         "does not emit @Image tags, Shot labels, or fal settings for a non-Seedance model",
         "states that Seedance specs and surfaces do not transfer",
@@ -856,7 +856,7 @@
       ],
       "failure_mode": "Seedance syntax emitted for a non-Seedance model",
       "skills_expected_to_activate": [
-        "seedance-prompt"
+        "seedance-20"
       ]
     }
   ]

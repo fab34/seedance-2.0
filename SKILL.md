@@ -19,7 +19,7 @@ Seedance 2.0 operating loop for agent-directed video work. Use this root skill t
 3. Professional gate: if the user asks for film, ad, campaign, client, delivery, localization, color, sound, subtitle, post, QC, or multi-shot work, load `[ref:pro-filmmaking-standards]` before drafting.
 4. Mode gate: choose T2V, I2V, V2V, R2V, FLF2V, edit, extend, or troubleshoot before writing prose.
 
-   Mode availability is surface-specific: edit and extend exist on Dreamina and Ark routes; fal has no extend endpoint - chain image-to-video from the previous clip's last frame instead.
+   Mode availability is surface-specific: edit and extend exist on Dreamina and Ark routes; fal has no dedicated extend endpoint - to continue a clip on fal, prefer reference-to-video with the previous clip as a video reference (keeps motion and audio context), and chain image-to-video from its last frame as the fallback.
 
 5. Capability check: when planning any shot, mode, or budget, load `[ref:capability-map]` to design into model strengths and around known limits before drafting.
 6. Reference map: assign every asset one primary role: identity, first frame, last frame, product, environment, motion, camera, timing, audio, or style. State what must not transfer.

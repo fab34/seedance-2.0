@@ -27,12 +27,13 @@ confidence: public-source snapshot as of the verification date; per-section date
 
 **Endpoints:** `text-to-video`, `image-to-video` (start image + optional `end_image_url` for A→B), `reference-to-video` — each with a `/fast` tier.
 **Duration:** 4–15s or `auto` (model sizes to prompt complexity; multi-shot → longer). **Aspect:** 21:9 / 16:9 / 4:3 / 1:1 / 3:4 / 9:16 / auto.
-**Params:** `prompt`, `image_url`, `end_image_url`, `resolution`, `duration`, `aspect_ratio`, `generate_audio` (default on; **audio included at no extra generation cost**), `seed` (**reproducibility aid, not a hard lock** — output may vary even with the same seed).
+**Params (t2v/i2v):** `prompt`, `image_url`, `end_image_url`, `resolution`, `duration`, `aspect_ratio`, `generate_audio` (default on; **audio included at no extra generation cost**), `seed` (**reproducibility aid, not a hard lock** — output may vary even with the same seed).
+**Params (r2v):** reference assets go in array fields — reported as `image_urls`, `video_urls`, `audio_urls` (2026-06-11, not live-verified) — do not reuse the i2v `image_url`/`end_image_url` fields for references; verify exact field names per endpoint at call time.
 **References (r2v):** @Image×9, @Video×3, @Audio×3, ≤12 files. Images JPEG/PNG/WebP ≤30 MB; videos 480–720p, combined ≤15s, <50 MB total; audio MP3/WAV ≤15 MB each, combined ≤15s; **audio requires ≥1 image or video.**
 **Resolution — open conflict:** fal's prose guide states 480p/720p only; the model + pricing pages list **1080p (~$0.682/s)** and the r2v example uses `resolution: "1080p"`. Verify per endpoint at call time.
 **Pricing (verify live before quoting):** 720p standard ≈$0.30/s · fast ≈$0.24/s · video-reference ×0.6 · 1080p ≈$0.682/s.
 **Prompting:** prose direction; `Shot 1:/Shot 2:` labels for multi-shot; r2v docs also accept timestamp pacing phrases as secondary hints. **Fast tier is unreliable for multi-shot / slow-mo / dolly.**
-**No extend endpoint** — extend is a Dreamina-app feature; on fal, chain image-to-video from the previous clip's last frame.
+**No dedicated extend endpoint** — extend is a Dreamina-app feature. To continue a clip on fal, prefer reference-to-video with the previous clip as a video reference (keeps motion and audio context); chaining image-to-video from the previous clip's last frame is the fallback.
 
 ## Operational Wording
 
