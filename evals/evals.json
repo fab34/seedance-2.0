@@ -873,6 +873,22 @@
       "skills_expected_to_activate": [
         "seedance-interview"
       ]
+    },
+    {
+      "id": "english_slop_and_filter_vocab",
+      "prompt": "Improve this: 'Epic cinematic ultra-realistic 8K masterpiece, stunning dramatic scene where we shoot the hero in dead silence, kill the lights, award-winning.'",
+      "expected_output": "De-slopped English prompt using concrete production vocabulary: every quality adjective deleted or converted to one observable detail, and the filter-trip homonyms (shoot, kill the lights, dead silence) replaced with production synonyms; replacements listed.",
+      "assertions": [
+        "removes or converts every empty quality word (epic, cinematic, ultra-realistic, 8K, masterpiece, stunning, dramatic, award-winning)",
+        "replaces threat-reading homonyms with production synonyms (film the take, cut the lights to black, held silence)",
+        "states each replacement made",
+        "does not add filter-evasion tactics or treat the repair as bypass guidance"
+      ],
+      "failure_mode": "slop kept or homonym repairs framed as filter evasion",
+      "skills_expected_to_activate": [
+        "seedance-vocab-en",
+        "seedance-antislop"
+      ]
     }
   ]
 }

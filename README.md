@@ -169,6 +169,7 @@ The README now includes a committed visual set rather than a single generic hero
 
 | Skill | Use when |
 |---|---|
+| [`seedance-vocab-en`](skills/seedance-vocab-en/SKILL.md) | English wording is slop-heavy, padded with empty quality words, or tripping false-positive filters. |
 | [`seedance-vocab-zh`](skills/seedance-vocab-zh/SKILL.md) | Chinese prompt compression or Mandarin cinematic vocabulary is needed. |
 | [`seedance-vocab-ja`](skills/seedance-vocab-ja/SKILL.md) | Japanese cinematic vocabulary is needed. |
 | [`seedance-vocab-ko`](skills/seedance-vocab-ko/SKILL.md) | Korean cinematic vocabulary is needed. |

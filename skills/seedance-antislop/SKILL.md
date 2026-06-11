@@ -42,7 +42,7 @@ First, underline all superlatives and vague style labels. Second, decide whether
 
 Do not remove useful genre language when it is paired with concrete direction. `Noir hallway with hard venetian-blind shadows` is useful; `dramatic cinematic noir vibes` is not. Keep terms that communicate medium, era, palette, or lens behavior.
 
-Load `[ref:anti-slop-lexicon]` for the extended replacement table.
+Load `[ref:anti-slop-lexicon]` for the extended replacement table, and `[skill:seedance-vocab-en]` with `references/vocab/en.md` for the full function-organized English precision vocabulary, slop traps, and filter-trip repairs.
 
 ## Output Contract
 

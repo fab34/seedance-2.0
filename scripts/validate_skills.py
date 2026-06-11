@@ -12,7 +12,7 @@ EXPECTED_SKILLS = [
     "seedance-copyright", "seedance-examples-zh", "seedance-filter", "seedance-interview",
     "seedance-interview-short", "seedance-lighting", "seedance-motion", "seedance-pipeline",
     "seedance-prompt", "seedance-prompt-short", "seedance-recipes", "seedance-style",
-    "seedance-troubleshoot", "seedance-vfx", "seedance-vocab-es", "seedance-vocab-ja",
+    "seedance-troubleshoot", "seedance-vfx", "seedance-vocab-en", "seedance-vocab-es", "seedance-vocab-ja",
     "seedance-vocab-ko", "seedance-vocab-ru", "seedance-vocab-zh",
 ]
 
@@ -54,6 +54,7 @@ REQUIRED_REFERENCES = [
     "references/eval-rubric.md",
     "references/progressive-disclosure.md",
     "references/prompt-examples.md",
+    "references/vocab/en.md",
     "references/vocab/zh.md",
     "references/vocab/ja.md",
     "references/vocab/ko.md",
