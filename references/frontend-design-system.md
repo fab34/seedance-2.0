@@ -41,8 +41,8 @@ The front page uses a studio spec-sheet system. Apply these tokens to every hand
 | Hairline | `#2E2A22` | `#D8D0BE` |
 | Accent (single) | `#E2A75E` amber | `#A86F24` amber |
 
-- Display type: `Georgia, 'Times New Roman', Times, serif` - editorial, no external fonts.
-- Specification type: `ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace` with letter-spacing.
+- Display type: `Didot, 'Bodoni MT', 'Hoefler Text', Baskerville, 'Palatino Linotype', Georgia, serif` - high-contrast editorial serif where the system provides one, Georgia as the universal fallback; weight 400, no external fonts. The tagline is set as a serif italic aphorism in sentence case, not monospace.
+- Specification type: `ui-monospace, 'SF Mono', SFMono-Regular, Menlo, Consolas, monospace` - weight 400, smaller sizes, generous letter-spacing (6-7px on eyebrows); labels whisper, the wordmark speaks.
 - Motifs: sprocket strips, viewfinder corner marks, crosshairs, timecode, waveform ticks - drawn as fine line work.
 - The masthead ships as a theme-aware pair (`hero-dark.svg`, `hero-light.svg`) behind a `prefers-color-scheme` picture element; the operating diagram (`skill-map.svg`) carries its own background so it reads on both themes.
 - Do not bake version numbers or counts into vector assets; they go stale. Use timeless labels (ROUTE / VERIFY / DIRECT / DELIVER).

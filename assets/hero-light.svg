@@ -3,13 +3,14 @@
   <desc>Editorial masthead on warm paper: serif Seedance 2.0 Skill OS wordmark with monospace specification labels, a 21:9 viewfinder frame with timecode, and film sprocket details.</desc>
   <defs>
     <style>
-      .display{font:400 88px Georgia,'Times New Roman',Times,serif;fill:#1C1914;letter-spacing:-1px}
-      .display-i{font:italic 400 88px Georgia,'Times New Roman',Times,serif;fill:#1C1914;letter-spacing:-1px}
-      .eyebrow{font:500 15px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;fill:#A86F24;letter-spacing:5px}
-      .spec{font:500 14px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;fill:#6F6757;letter-spacing:3px}
-      .spec-bright{font:500 14px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;fill:#1C1914;letter-spacing:3px}
-      .tiny{font:500 12px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;fill:#6F6757;letter-spacing:2px}
-      .tiny-amber{font:500 12px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;fill:#A86F24;letter-spacing:2px}
+      .display{font:400 94px Didot,'Bodoni MT','Hoefler Text',Baskerville,'Palatino Linotype',Georgia,'Times New Roman',serif;fill:#1C1914;letter-spacing:-1.5px}
+      .display-i{font:italic 400 94px Didot,'Bodoni MT','Hoefler Text',Baskerville,'Palatino Linotype',Georgia,'Times New Roman',serif;fill:#1C1914;letter-spacing:-1.5px}
+      .tagline{font:italic 400 22px Didot,'Bodoni MT','Hoefler Text',Baskerville,'Palatino Linotype',Georgia,'Times New Roman',serif;fill:#6F6757;letter-spacing:0.5px}
+      .eyebrow{font:400 13px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;fill:#A86F24;letter-spacing:7px}
+      .spec{font:400 13px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;fill:#6F6757;letter-spacing:3px}
+      .spec-bright{font:400 13px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;fill:#1C1914;letter-spacing:3px}
+      .tiny{font:400 11px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;fill:#6F6757;letter-spacing:2px}
+      .tiny-amber{font:400 11px ui-monospace,'SF Mono',SFMono-Regular,Menlo,Consolas,monospace;fill:#A86F24;letter-spacing:2px}
       .hair{stroke:#D8D0BE;stroke-width:1}
       .mark{stroke:#A86F24;stroke-width:2;fill:none}
       .wave{stroke:#6F6757;stroke-width:1.5}
@@ -33,7 +34,7 @@
   <text x="74" y="118" class="eyebrow">INTENT-FIRST AI FILMMAKING</text>
   <text x="70" y="208" class="display">Seedance 2.0</text>
   <text x="70" y="298" class="display-i">Skill OS<tspan fill="#A86F24">.</tspan></text>
-  <text x="74" y="344" class="spec">DIRECT THE MODEL — DO NOT MICRO-MANAGE THE FRAME</text>
+  <text x="74" y="346" class="tagline">Direct the model — don’t micro-manage the frame.</text>
 
   <g>
     <path class="mark" d="M790 96 h28 M790 96 v24"/>
