@@ -2,6 +2,20 @@
 
 All notable changes to this project are documented here.
 
+## [5.5.0] — 2026-06-12
+
+The minor bump marks the completion of the production arc built across the 5.4.6-5.4.9 line: capability extraction, the six-language anti-slop system, the plain-language interview, the editorial front page, model mechanics, and the soul layer - now closed by the iteration economy.
+
+### Added
+
+- Added `references/retake-protocol.md`: five-verdict take triage (keep / fix in post / edit / re-roll / rewrite) anchored to the allocation model's primary spend, the one-variable rule, attempt budgets with written stop conditions, draft-cheap/lock-expensive cost awareness with verify-live caveats, the auditable shot log, and the honest don't-generate exit.
+- Added eval case `retake_triage_discipline` (61 protected cases): fails reflexive regeneration of a keepable take.
+
+### Changed
+
+- Operating-loop repair step now triages returned takes before troubleshooting; `seedance-troubleshoot` routes partial successes to triage instead of rewrites.
+- Trued README badges (47 references, 61 evals) and bumped active skill metadata, validator expectations, and eval metadata to v5.5.0.
+
 ## [5.4.9] — 2026-06-12
 
 ### Added
