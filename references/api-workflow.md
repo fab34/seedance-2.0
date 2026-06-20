@@ -1,8 +1,8 @@
 # API Workflow
 
-last_verified: 2026-05-30
+last_verified: 2026-06-20
 
-Use this reference for Seedance 2.0 operational planning on Volcengine, BytePlus, Runway, or wrappers. It is not a static API contract. Always recheck the active provider docs or console before implementation.
+Use this reference for Seedance 2.0 operational planning on Volcengine, BytePlus, Runway, fal, provider/router surfaces, or wrappers. It is not a static API contract. Always recheck the active provider docs or console before implementation.
 
 ## Surface Gate
 
@@ -11,6 +11,8 @@ Use this reference for Seedance 2.0 operational planning on Volcengine, BytePlus
 | Volcengine Ark | China-facing official Ark workflows, model IDs, task lifecycle, first/last-frame roles, `return_last_frame`, web-search tools, and virtual portrait assets. | model ID, region, entitlement, schema, pricing, duration, resolution, face/reference policy |
 | BytePlus ModelArk | International BytePlus docs or console workflows. | JS-rendered pricing/model pages, account access, region, exact model ID, upload/file rules |
 | Runway | Runway web/API/MCP workflow with `seedance2`, hosted uploads, and Runway plan/region constraints. | duration, ratios, plan, region, SDK field support, audio-reference combination rules |
+| Provider/router APIs | EvoLink, OpenRouter, Kie.ai, PiAPI, LaoZhang, Runware, ModelsLab, AI/ML API, MuAPI, SeeGen, Segmind, or similar surfaces. | base URL, model ID, task endpoint, polling endpoint, callback/webhook support, billing unit, file hosting, reference schema, face policy, output URL lifetime, rights terms |
+| China-facing official surfaces | ByteDance Seed, Volcengine Ark, BytePlus ModelArk, Doubao, Jimeng/Jianying, CapCut/Jianying. | language/region, account tier, enterprise or individual access, identity verification, portrait/virtual-avatar flow, console entitlement, exact docs date |
 | Wrapper APIs | Fast prototyping through a third-party provider. | whether names, prices, moderation, duration, or face support are wrapper-specific |
 
 ## Async Task Lifecycle
@@ -37,6 +39,10 @@ Use this reference for Seedance 2.0 operational planning on Volcengine, BytePlus
 Volcengine docs are the current source for `doubao-seedance-2-0-260128`, `doubao-seedance-2-0-fast-260128`, first/last-frame roles, and Ark task flow. Quote prices only with date and caveat.
 
 Runway docs are the current source for Runway's `seedance2` API surface, `runway://` uploads, duration, reference-count rules, and SDK caveats. Do not copy Runway field names into Volcengine examples or vice versa.
+
+Provider/router surfaces are integration conveniences, not source-of-truth model specs. As of 2026-06-20, the repo tracks EvoLink, OpenRouter, Kie.ai, PiAPI, LaoZhang, Runware, ModelsLab, AI/ML API, MuAPI, SeeGen, and Segmind as public pages or docs that mention Seedance 2.0 access. Use the active surface's own docs for model IDs and fields, and never merge schemas across providers.
+
+Chinese-language search results need classification before use. Official ByteDance/Volcengine/BytePlus/Doubao/Jimeng/Jianying pages can support China-facing surface guidance. Hosted workflows, Chinese blogs, pricing comparisons, and business-partner news can provide context, but they are not public API contracts unless they link to provider-owned API docs.
 
 BytePlus pages can be JavaScript-rendered. Do not infer live pricing or model IDs from incomplete static fetches.
 

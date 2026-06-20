@@ -4,6 +4,13 @@ All notable changes to this project are documented here.
 
 Current active release: **6.0.1**. Older entries below are preserved as release history, not active version guidance.
 
+## Unreleased
+
+### Added
+
+- Added source-gated provider/router coverage for EvoLink, OpenRouter, Kie.ai, PiAPI, LaoZhang, Runware, ModelsLab, AI/ML API, MuAPI, SeeGen, and Segmind, while keeping them labeled as third-party or router surfaces rather than official ByteDance behavior.
+- Added a China-facing provider-search boundary that separates official ByteDance/Volcengine/BytePlus/Doubao/Jimeng/Jianying surfaces from workflow hosts, Chinese-language blogs, and business-partner news that should not be treated as public API providers without provider-owned docs.
+
 ## [6.0.1] — 2026-06-20
 
 ### Added

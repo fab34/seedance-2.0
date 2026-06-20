@@ -1,6 +1,6 @@
 # Model Name Map
 
-last_verified: 2026-06-14
+last_verified: 2026-06-20
 
 Use this file when a user says "Seedance Pro", "Seedance V2", "Seed2.0 Pro", or wrapper-specific model names.
 
@@ -17,6 +17,12 @@ Use this file when a user says "Seedance Pro", "Seedance V2", "Seed2.0 Pro", or 
 | `dreamina-seedance-2-0-260128` / `-fast-260128` | BytePlus ModelArk model IDs — the international counterpart of the Volcengine `doubao-` IDs (reported 2026-06-14) | BytePlus uses a `dreamina-` prefix where Volcengine uses `doubao-`. Same model family, different surface; recheck the live ModelArk docs before quoting. |
 | `seedance2` | Runway API model ID | Use only for Runway's API surface. Do not substitute for Volcengine/Doubao model IDs. |
 | fal Seedance 2.0 endpoints | fal's hosted Seedance 2.0 surface: `text-to-video`, `image-to-video`, `reference-to-video`, each with a `/fast` tier | Use fal endpoint naming only for the fal surface (verified 2026-06-09). Recheck endpoint IDs, resolution tiers, and per-second pricing live before quoting. Do not substitute for Volcengine, Doubao, or Runway model IDs. |
+| `seedance-2.0-text-to-video` | EvoLink model value shown on its public Seedance 2.0 page | Use only on EvoLink's API surface. Recheck image/reference/video modes, pricing, callback support, and face/reference policy before implementation. |
+| `bytedance/seedance-2.0` | OpenRouter model slug and related provider/router naming seen on public model pages | Use only for the provider/router surface that documents it. Recheck whether the route supports text-to-video, image-to-video, first/last-frame, or multimodal reference inputs before coding. |
+| PiAPI `seedance` with `seedance-2-preview` / `seedance-2-fast-preview` | PiAPI task model and task-type pattern from its public Seedance docs | Use only with PiAPI's generic task API. Recheck current task types, less-restriction variants, asset-library requirements, and pricing before quoting. |
+| Runware `bytedance:seedance@2.0` / `bytedance:seedance@2.0-fast` | Runware model IDs visible in public model docs | Use only on Runware. Recheck exact operation support because provider pages can group text, image, video, audio, edit, and extend differently. |
+| LaoZhang `/seedance/api/v3` routes | LaoZhang provider-specific Seedance API surface | Use only when the user targets LaoZhang. Recheck endpoint paths, model values, auth, and task lifecycle in current LaoZhang docs. |
+| Kie.ai, ModelsLab, AI/ML API, MuAPI, SeeGen, Segmind Seedance routes | Provider-specific wrapper or router names | Treat as provider-specific labels, not canonical names. Recheck live docs and account access before implementation, especially for face/reference handling and output rights. |
 | Seedance V2 | Community shorthand | Normalize to Seedance 2.0 unless the user is clearly referring to a wrapper-specific model. |
 | Seedance 2.0 Pro | Ambiguous community shorthand | Do not assume this is an official video-model name. Ask which surface, or normalize to Seedance 2.0 / Fast with a caveat. |
 | Seed2.0 Pro | Separate Seed/Doubao naming seen outside the Seedance video model line | Do not confuse with Seedance 2.0 video generation. |
@@ -46,6 +52,6 @@ For these, offer general filmmaking craft only — never Seedance reference tags
 
 ## Wrapper Names
 
-Third-party wrappers may expose names such as `doubao-seedance-2.0`, `doubao-seedance-2.0-fast`, or provider-prefixed variants. These can be useful for implementation, but they are not the repo's source of truth for official naming.
+Third-party wrappers may expose names such as `doubao-seedance-2.0`, `doubao-seedance-2.0-fast`, OpenRouter-style slugs, PiAPI task types, Runware IDs, or provider-prefixed variants. These can be useful for implementation, but they are not the repo's source of truth for official naming.
 
 Do not quote current BytePlus Seedance 2.0 pricing or model IDs from JavaScript-rendered pricing pages unless the value has been verified in a current official page or console. Volcengine prices can be cited only with source date, model, surface, currency, and a recheck warning.

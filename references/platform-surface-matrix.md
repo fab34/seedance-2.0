@@ -1,6 +1,6 @@
 # Platform Surface Matrix
 
-last_verified: 2026-06-13
+last_verified: 2026-06-20
 
 Seedance 2.0 capability claims must separate the model from the product surface. A feature can be true for the model while still being gated, unavailable, renamed, priced differently, or policy-limited on a specific surface.
 
@@ -20,6 +20,8 @@ Access note (2026-06-13): the overseas Seedance 2.0 API is contested following a
 | Atlas Cloud | third-party aggregator surface | Hosted Seedance 2.0 via an async video-generation API | Verified 2026-06-13: Atlas Cloud hosts live Seedance 2.0 (text-to-video, image-to-video, reference-to-video, plus fast variants). Its OpenAI-compatible endpoint covers LLM/chat only; **Seedance video generation uses Atlas Cloud's own async API** - `POST /api/v1/model/generateVideo` with a model id such as `bytedance/seedance-2.0/text-to-video`, returning a prediction id polled at `/api/v1/model/prediction/{id}` - not the OpenAI SDK shape. One of several aggregators reselling Seedance access; treat endpoints, pricing, model IDs, quotas, and guardrails as aggregator-specific, recheck before use, and never present them as official ByteDance behavior. The repo endorses no reseller; listed for completeness. |
 | Replicate | third-party model-host surface | Hosted Seedance 2.0 under the official `bytedance` namespace | Verified 2026-06-13: Replicate lists `bytedance/seedance-2.0` (text-to-video, image-to-video, multimodal reference inputs `[Image1]/[Video1]/[Audio1]`, native audio) behind its standard async prediction API; check the model page for supported resolutions rather than assuming model-level maximums. A reputable, widely-used model host — but still surface-specific: recheck pricing, limits, and live access (see the overseas-API status note in `api-status.md`), and never present its behavior as official ByteDance behavior. The repo endorses no host; listed for completeness. |
 | WaveSpeedAI / Higgsfield / Pollo | third-party host surfaces | Additional verified Seedance 2.0 hosts | Verified 2026-06-14 (provider-own pages): WaveSpeedAI (async job API, t2v/i2v + fast/turbo/"spicy" variants, 480p/720p/1080p tiers), Higgsfield (creator UI, multimodal inputs; no clearly documented public API found), Pollo (web model page + unified job API). Same rules as every host: async submit/poll for video, recheck live, aggregator/host-specific not official. The repo endorses none. |
+| EvoLink / OpenRouter / Kie.ai / PiAPI / LaoZhang | third-party provider/router surfaces | Additional Seedance 2.0 API access routes | Verified 2026-06-20 from provider-owned pages or docs: EvoLink documents `/v1/videos/generations` plus `/v1/tasks/{task_id}`; OpenRouter lists `bytedance/seedance-2.0`; PiAPI documents a generic task API with Seedance task types; LaoZhang documents a `/seedance/api/v3` base path; Kie.ai publishes Seedance 2.0 API access. Treat model IDs, auth, base URL, polling, pricing, face/reference support, output URLs, and content policy as provider-specific. The repo endorses no reseller. |
+| Runware / ModelsLab / AI/ML API / MuAPI / SeeGen / Segmind | third-party provider/router surfaces | Additional Seedance 2.0 or Seedance 2 Fast model-host routes | Verified 2026-06-20 from provider-owned pages or docs. These pages list Seedance 2.0, Seedance 2.0 Fast, or related ByteDance video routes, but their fields and model names differ. Use them as candidates for provider-specific integration only after live docs and account access are checked. The repo endorses no reseller. |
 | Dreamina / Jimeng web UI | official product surface | Creator workflow | Behavior may differ from API. Do not generalize web UI limits, credits, face checks, or upload rules to every surface. |
 | ComfyUI partner node docs | partner workflow docs | T2V, R2V, FLF2V workflows | Useful for workflow vocabulary and surface caveats. Label as ComfyUI-specific rather than universal Seedance behavior. |
 | Third-party wrappers | community/commercial wrapper | Access abstraction | Useful for field patterns and integration ideas only. Do not present wrapper model names, prices, or guardrail behavior as official. |
@@ -28,7 +30,11 @@ Access note (2026-06-13): the overseas Seedance 2.0 API is contested following a
 
 ## API Shape Rule
 
-Verified 2026-06-14 across every developer surface (fal, Replicate, Volcengine Ark, BytePlus ModelArk, Atlas Cloud, Runway, WaveSpeed, Pollo): Seedance 2.0 **video generation is always an async job** — submit a task, get an id, poll until ready, fetch the URL. No surface exposes video as an OpenAI-compatible chat call. Where a surface advertises "OpenAI-compatible," that applies to its **LLM/chat** endpoint only. Never hand a user the OpenAI SDK shape for Seedance video.
+Verified 2026-06-20 across every developer surface checked here (fal, Replicate, Volcengine Ark, BytePlus ModelArk, Atlas Cloud, Runway, WaveSpeed, Pollo, EvoLink, OpenRouter, Kie.ai, PiAPI, LaoZhang, Runware, ModelsLab, AI/ML API, MuAPI, SeeGen, Segmind): Seedance 2.0 **video generation is always an async job** - submit a task, get an id, poll until ready, fetch the URL. Some routers wrap the job in a unified or OpenAI-compatible surface, but the video generation itself still uses provider-specific async semantics. Never hand a user an LLM/chat request shape for Seedance video.
+
+## China-Facing Search Note
+
+Searches in Chinese on 2026-06-20 found official China-facing surfaces already represented here: ByteDance Seed, Volcengine Ark, BytePlus ModelArk, Doubao, Jimeng/Jianying, and CapCut/Jianying. RunningHub-style hosted ComfyUI workflows and Chinese business-partner news can be useful context, but they are not self-serve API surfaces unless a provider-owned API page exposes endpoints, model IDs, pricing, account access, and policy terms.
 
 ## Surface-Specific Claims
 
