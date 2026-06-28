@@ -370,12 +370,22 @@ python scripts/behavior_contract_check.py --strict
 python scripts/sequence_eval_check.py --strict
 python scripts/generation_run_check.py --strict
 python scripts/prompt_lint.py --self-test --strict
+python scripts/eval_run.py --self-test --strict
 python -m unittest discover -s tests -v
 python -m compileall scripts tests
 git diff --check
 ```
 
-The CI workflow runs the same checks on push and pull request.
+The CI workflow runs the same checks on push and pull request. These are deterministic and offline — they prove the package is well-formed.
+
+To prove the package is also *good*, run the model-in-the-loop harness, which sends each eval case through the real skill content and scores the response against the case's assertions using [`eval-rubric.md`](references/eval-rubric.md):
+
+```bash
+export ANTHROPIC_API_KEY=...   # required for a live scored pass
+python scripts/eval_run.py --run --ledger evals/eval-run-ledger.md --stamp 2026-06-28
+```
+
+This is the quality gate, not a shape gate, so it lives outside offline CI; the latest scored run is recorded in [`evals/eval-run-ledger.md`](evals/eval-run-ledger.md).
 
 ## Design Standard
 

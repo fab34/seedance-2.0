@@ -86,6 +86,7 @@ REQUIRED_FILES = [
     "scripts/validate_skills.py",
     "scripts/content_audit.py",
     "scripts/eval_schema_check.py",
+    "scripts/eval_run.py",
     "scripts/design_audit.py",
     "scripts/install_codex_skill.py",
     "scripts/source_registry_check.py",
