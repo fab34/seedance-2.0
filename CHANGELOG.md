@@ -2,11 +2,20 @@
 
 All notable changes to this project are documented here.
 
-Current active release: **6.1.0**. Older entries below are preserved as release history, not active version guidance.
+Current active release: **6.1.1**. Older entries below are preserved as release history, not active version guidance.
 
 ## Unreleased
 
 _No unreleased changes._
+
+## [6.1.1] — 2026-06-23
+
+### Changed
+
+- Added a **Fast Lane** to the root operating loop: a single standalone clip from a non-expert, with no IP/safety flag and no platform-fact question, now routes straight to `seedance-interview-short` -> `seedance-prompt-short` with the source gate, professional gate, capability-map, allocation-model, and the directing engine all load-on-demand instead of mandatory. This fixes a self-inflicted violation of the skill's own intent-first / progressive-disclosure principles on the most common case.
+- Made the directing engine load-on-demand rather than always-on: the root Direction step and the full interview now apply the one-sentence-intention coherence rule inline from memory and load `[ref:directing-engine]` only when scenes need distinct treatment, one voice must hold across many clips, or the setup is genuinely unclear.
+- Deferred the sequence/continuation interview questions (Q6-Q9) for plain single-clip ideas: questions 1-5 are the single-clip core; 6-9 are raised only when the idea is already a longer story or the user signals a series, part two, continuation, or making it longer.
+- Added eval case `beginner_fast_lane_single_clip`; bumped active metadata, README badges, eval/validator expectations, manifest, and readiness doc to v6.1.1 (115 eval cases).
 
 ## [6.1.0] — 2026-06-22
 

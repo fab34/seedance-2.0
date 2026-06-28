@@ -1,6 +1,6 @@
 {
-  "version": "6.1.0",
-  "updated": "2026-06-22",
+  "version": "6.1.1",
+  "updated": "2026-06-23",
   "cases": [
     {
       "id": "vague_idea_interview",
@@ -2552,6 +2552,22 @@
       "skills_expected_to_activate": [
         "seedance-sequence",
         "seedance-interview"
+      ]
+    },
+    {
+      "id": "beginner_fast_lane_single_clip",
+      "prompt": "make a funny video of my dog stealing a sock",
+      "expected_output": "A fast, plain single-clip path: a compact brief or prompt with no sequence/continuation questions and no heavy reference front-loading.",
+      "assertions": [
+        "does not ask sequence, continuation, or cross-clip lock questions for a simple single clip",
+        "routes through the short interview or writes the brief immediately, then a compact prompt",
+        "applies one motivated intention inline without front-loading heavy references",
+        "surfaces no film jargon to the user"
+      ],
+      "failure_mode": "running the full gate loop and sequence questions on a simple single-clip idea",
+      "skills_expected_to_activate": [
+        "seedance-interview-short",
+        "seedance-prompt-short"
       ]
     }
   ]
