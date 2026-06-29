@@ -56,6 +56,14 @@ Use this reference for precise English Seedance prompt wording. English is the d
 | Safety | `original character with broad archetype traits` | identity without likeness |
 | Safety | `prop object handled safely` | objects without threat reading |
 
+## Dialogue Notes
+
+Field-observed from 2026 community testing; test per surface, never promise results. English has the second-strongest lip-sync after Mandarin.
+
+- Reliable-sync budget is roughly 16-20 words in a ~15s clip; longer lines compress the mix. Keep each line to 5-10 words.
+- The acoustic budget (~35-40 words in 15s at natural pace) is higher than the reliable-sync budget - stay under the sync budget, not the acoustic one.
+- A written beat between sentences is field-reported to act as a re-sync anchor: `She pauses, then continues:` - test it rather than assume it.
+
 ## Slop Traps
 
 English prompts attract empty evaluation words. Each adds tokens and zero signal; replace with something a camera, microphone, light meter, or stopwatch could detect.

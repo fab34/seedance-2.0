@@ -86,6 +86,14 @@ Use these when the Japanese prompt is part of a v6 sequence project, continuatio
 | Text | `日本語コピーと法務文言は編集で追加` | Japanese copy and legal text added in edit |
 | Safety | `創作上の役割だけ残し、オリジナル人物に置き換える` | preserve creative function with original identity |
 
+## Dialogue Notes
+
+Field-observed from 2026 community testing (note.com, Qiita); test per surface, never promise results. Japanese lip-sync is weaker than Mandarin and English.
+
+- No separate word-count is documented; treat Japanese as the weaker tier. Keep to one short line (一言), about one breath.
+- Japanese is mora-timed, so "word count" misleads - judge by sentence length and clarity, not word number.
+- For reliable Japanese voice, prefer a voice reference (attach the spoken line so the model lip-syncs to it) or plan a post-dub.
+
 ## Slop Traps
 
 コミュニティの共通認識：抽象的な形容詞は、モデルがどの要素を強調すべきか判断できず、出力を不安定にする。感覚語は、その感覚を生む物理要素（動作動詞＋速度＋視点、光源＋方向＋挙動）に分解する。

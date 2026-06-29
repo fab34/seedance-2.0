@@ -12,10 +12,10 @@
 
 An agent that directs Seedance 2.0 like a filmmaker — reading each scene before it writes the prompt.<br>Text, image, video, and reference to video with native audio, IP-safe rewrites, source-dated platform facts, and native reader paths for English, 中文, 日本語, and 한국어.
 
-[![Version](https://img.shields.io/badge/version-6.2.0-E2A75E?style=flat-square&labelColor=14110B)](#changelog)
+[![Version](https://img.shields.io/badge/version-6.3.0-E2A75E?style=flat-square&labelColor=14110B)](#changelog)
 [![Sub-skills](https://img.shields.io/badge/sub--skills-28-4A4438?style=flat-square&labelColor=14110B)](#skill-map)
 [![References](https://img.shields.io/badge/references-58-4A4438?style=flat-square&labelColor=14110B)](#reference-library)
-[![Evals](https://img.shields.io/badge/evals-121-4A4438?style=flat-square&labelColor=14110B)](#validation)
+[![Evals](https://img.shields.io/badge/evals-122-4A4438?style=flat-square&labelColor=14110B)](#validation)
 [![License](https://img.shields.io/badge/license-MIT-4A4438?style=flat-square&labelColor=14110B)](LICENSE)
 
 [Start here](#start-here) · [Skill map](#skill-map) · [Reference library](#reference-library) · [Visual gallery](#visual-gallery) · [Install](#install)
@@ -28,7 +28,7 @@ Author: [Iamemily2050 (@iamemily2050)](https://github.com/Emily2040) · [Instagr
 
 Platform context: [ByteDance Seedance 2.0](https://seed.bytedance.com/en/seedance2_0) · Dreamina · Jimeng · Doubao · [Volcengine Ark](https://www.volcengine.com/docs/82379/2291680?lang=zh) · [BytePlus ModelArk](https://docs.byteplus.com/en/docs/ModelArk/2291680) · [Runway Seedance 2](https://docs.dev.runwayml.com/guides/models/) · fal · provider/router surfaces tracked in [`platform-surface-matrix.md`](references/platform-surface-matrix.md)
 
-Updated: **2026-06-28** · **v6.2.0 model-in-the-loop eval harness and a de-templated 47-case sequence suite**
+Updated: **2026-06-29** · **v6.3.0 audio-architecture research: per-language dialogue capacity and the voice-reference lip-sync path**
 
 ---
 
@@ -398,7 +398,7 @@ The README must stay readable in GitHub mobile, dark mode, and narrow widths. SV
 
 ## Changelog
 
-See [`CHANGELOG.md`](CHANGELOG.md). Current release: **v6.2.0**.
+See [`CHANGELOG.md`](CHANGELOG.md). Current release: **v6.3.0**.
 
 ## License
 

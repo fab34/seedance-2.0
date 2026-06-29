@@ -63,6 +63,13 @@ Use this reference for Spanish Seedance prompt wording, role binding, and compac
 
 `[Image1] fija el personaje original. [Video1] solo controla el movimiento de cámara; no copiar persona, lugar ni marca. [Audio1] solo marca tempo y ambiente.`
 
+## Dialogue Notes
+
+Field-observed and under-tested for Spanish specifically as of 2026; test per surface, never promise results. Treat Spanish as the non-English/Mandarin tier.
+
+- Keep to one short clear line, about one breath.
+- For reliable Spanish voice, prefer a voice reference (attach the spoken line so the model lip-syncs to it) or plan a post-dub.
+
 ## Slop Traps
 
 Consenso de la comunidad: los adjetivos de calidad abstractos desestabilizan la generación porque el modelo no sabe qué elemento enfatizar. Convierte cada palabra-sensación en los elementos físicos que la producen (verbo de cámara + velocidad + punto de vista, fuente de luz + dirección + comportamiento).

@@ -1,6 +1,6 @@
 {
-  "version": "6.2.0",
-  "updated": "2026-06-28",
+  "version": "6.3.0",
+  "updated": "2026-06-29",
   "cases": [
     {
       "id": "vague_idea_interview",
@@ -2714,6 +2714,21 @@
         "seedance-prompt",
         "seedance-antislop",
         "seedance-camera"
+      ]
+    },
+    {
+      "id": "audio_reference_lipsync_non_english",
+      "prompt": "I need a character speaking a full paragraph in Russian, perfectly lip-synced, but the synthesized Russian voice comes out English-accented and drifts off the mouth. How do I fix it?",
+      "expected_output": "Recommends the field-observed voice-reference lip-sync path (attach a rights-cleared recorded or licensed Russian voice so the model syncs to it instead of synthesizing) and/or a post-dub, labeled field-observed and surface-specific, with the rights caveat and short lines.",
+      "assertions": [
+        "offers the voice-reference lip-sync path: attach a real recorded or licensed voice clip so the model lip-syncs to it instead of synthesizing speech",
+        "labels the technique field-observed and surface-specific, not an official guarantee",
+        "treats the voice as rights-sensitive: own, licensed, or cleared voice, never a real or celebrity voice",
+        "keeps lines short and does not promise a clean fully-synthesized Russian voiced take"
+      ],
+      "failure_mode": "promising reliable synthesized non-English voiced dialogue, or suggesting cloning a real or celebrity voice",
+      "skills_expected_to_activate": [
+        "seedance-audio"
       ]
     }
   ]

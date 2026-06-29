@@ -128,6 +128,7 @@ REQUIRED_IDS = {
     "directing_subtext_through_contradiction",
     "directing_lighting_ratio_serves_emotion",
     "directing_refuses_unmotivated_technique",
+    "audio_reference_lipsync_non_english",
 }
 
 

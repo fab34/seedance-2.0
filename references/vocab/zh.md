@@ -98,6 +98,14 @@ Use these when the Chinese prompt is part of a v6 sequence project, continuation
 | Text | `中文标题和法务文案在剪辑中添加` | Chinese titles and legal copy added in edit |
 | Safety | `保留创意功能，替换为原创身份` | preserve creative function with original identity |
 
+## Dialogue Notes (对白注意事项)
+
+Field-observed from 2026 community testing (即梦官方手册解读、知乎、36氪实测); test per surface, never promise results. Mandarin has the strongest lip-sync, yet hands-on tests still report 语音错乱 / 字幕乱码 - budget retakes.
+
+- 台词格式：角色名 + 动作 + 冒号 + 引号内台词。Count characters/syllables, not "words"; keep to one short clause.
+- 唇形同步在部分界面默认关闭（如即梦需勾选"启用唇形同步"）- confirm it is enabled before blaming the prompt.
+- Inline audio tags are field-reported on some surfaces: 在台词末尾加方括号提示音色与音效，例如 `"领旨" [低沉男声][编钟余震]`。Surface-specific; verify before relying on it.
+
 ## Slop Traps
 
 社区共识：抽象的"感觉词"会让模型无法判断该强调哪个元素。把感觉词拆解成制造这种感觉的物理元素——材质、光线、色彩、空气——画面立即变稳。

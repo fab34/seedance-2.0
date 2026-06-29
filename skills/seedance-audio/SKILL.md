@@ -9,8 +9,8 @@ tags:
   - dialogue
   - seedance-20
 metadata:
-  version: "6.2.0"
-  updated: "2026-06-28"
+  version: "6.3.0"
+  updated: "2026-06-29"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
   repository: "https://github.com/Emily2040/seedance-2.0"
@@ -23,7 +23,7 @@ metadata:
 
 Use this for dialogue, lip-sync, sound layers, music, ambience, beat-sync, audio-reference mapping, desync troubleshooting, or sound-driven visual timing. Audio should support the visible beat instead of becoming a second competing prompt.
 
-Load `[ref:audio-guide]` for detailed constraints, beat-sync, desync repair, audio-reference conflicts, and multi-character workarounds. Load `[ref:audio-post-delivery]` when the user needs stems, M&E, dubbing, loudness, sync, mix, or delivery guidance.
+Load `[ref:audio-guide]` for how the audio model behaves, per-language dialogue capacity, the voice-reference lip-sync path, beat-sync, desync repair, audio-reference conflicts, and multi-character workarounds. Load `[ref:audio-post-delivery]` when the user needs stems, M&E, dubbing, loudness, sync, mix, or delivery guidance.
 
 ## Intent
 
@@ -31,7 +31,9 @@ Half of every emotion enters through the ears, and users almost always forget so
 
 ## Core Rules
 
-Keep dialogue short, quote spoken lines, and assign every line to a named speaker. Prefer locked or stable framing for lip-sync. Remove head-turning, large face motion, extreme camera moves, or busy hand gestures while mouth accuracy matters. Treat `[Audio1]` as a rhythm, pacing, mood, voice-tone, or ambience reference unless the active platform documents exact playback behavior.
+Keep dialogue short, quote spoken lines, and assign every line to a named speaker. Prefer locked or stable framing for lip-sync. Remove head-turning, large face motion, extreme camera moves, or busy hand gestures while mouth accuracy matters. Treat `[Audio1]` as a rhythm, pacing, mood, voice-tone, or ambience reference unless the active platform documents exact playback behavior; on surfaces that accept a spoken-voice reference, field reports indicate an attached voice clip can drive lip-sync directly - the model syncs to your audio instead of synthesizing speech, the most reliable field-reported path for non-English dialogue, using only rights-cleared voice.
+
+Reliability is probabilistic and language-dependent: field reports rank Mandarin strongest for lip-sync, English a close second, with Japanese, Korean, Russian, and others weaker. Keep non-English lines very short or use a voice reference, and budget retakes rather than promising a clean voiced take. See `[ref:audio-guide]` for the field-observed per-language dialogue-capacity table.
 
 ## Sound Layer Pattern
 

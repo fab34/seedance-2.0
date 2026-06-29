@@ -2,11 +2,24 @@
 
 All notable changes to this project are documented here.
 
-Current active release: **6.2.0**. Older entries below are preserved as release history, not active version guidance.
+Current active release: **6.3.0**. Older entries below are preserved as release history, not active version guidance.
 
 ## Unreleased
 
 _No unreleased changes._
+
+## [6.3.0] — 2026-06-29
+
+### Added
+
+- Folded deep audio-architecture research into `references/audio-guide.md`, `seedance-audio`, and the per-language `vocab/*.md`: a "how the audio actually works" reasoning model (joint audio-video generation, sound inferred from visuals, speech/articulation coupling, lip-sync sometimes off by default on some surfaces, probabilistic reliability, uneven per-language strength) - all labeled field-observed and surface-specific, never official.
+- Added a field-observed per-language dialogue-capacity table (English ~16-20 reliable-sync words per ~15s, Russian ~10-15 and weak, Mandarin strongest, Japanese/Korean weaker and under-tested) plus the acoustic-budget-vs-reliable-sync-budget distinction and the "one short sentence ~= one breath" cross-language unit.
+- Documented the voice-reference lip-sync path: on surfaces that accept a spoken-voice reference, an attached rights-cleared voice can drive lip-sync directly (the model syncs to it instead of synthesizing) - the most reliable field-reported path for non-English dialogue - correcting the prior "audio reference = tempo/mood only" framing. Treated as rights-sensitive and routed through copyright when unclear.
+- Added the field-observed inline audio-tag dialogue pattern and the Jimeng lip-sync-default-off note, plus eval `audio_reference_lipsync_non_english`.
+
+### Changed
+
+- Bumped active metadata, README badges (122 eval cases), eval/validator expectations, manifest, readiness, examples, and translated entries to v6.3.0.
 
 ## [6.2.0] — 2026-06-28
 
