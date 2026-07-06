@@ -81,9 +81,12 @@ When the idea has more than one scene, give each scene its own read and setup bu
 
 After one round of answers - or zero rounds, if the idea is already rich - stop asking and show:
 
-1. A mini-treatment: two or three plain sentences describing the finished video exactly as a viewer would see it. No production vocabulary.
-2. The assumptions made, each with a one-word switch: `I assumed warm late-afternoon light - say "night" and I'll relight it.`
-3. The production brief beneath, in full director language.
+1. An intent echo: one sentence restating what was heard, built from the user's own words plus the feeling, so a misread costs one correction instead of one generation (`[ref:proposal-kit]`).
+2. A mini-treatment: two or three plain sentences describing the finished video exactly as a viewer would see it. No production vocabulary.
+3. The assumptions made, each with a one-word switch: `I assumed warm late-afternoon light - say "night" and I'll relight it.`
+4. The production brief beneath, in full director language.
+
+When the idea is open-ended - the same intent could honestly become two or more different films, or the user asked for suggestions - replace the single mini-treatment with 2-3 contrasting proposal cards per `[ref:proposal-kit]`: each with a logline, story shape, how-it-is-filmed sentence, and feel, with exactly one marked recommended and why. "You decide" or silence selects the recommendation; the chosen card converts to the brief with zero further questions because its production parameters were pre-decided behind the card.
 
 Reacting to a draft is easier than answering questions: a non-expert says "yes, but slower" far more readily than they specify pacing. Treat their reaction as the second interview round.
 
@@ -94,7 +97,7 @@ Reacting to a draft is easier than answering questions: a non-expert says "yes, 
 3. Identify the genre path: product, lifestyle, drama, music video, landscape, commercial, animation, UGC, or experimental. Derive one directorial voice from that path plus the chosen feeling, reference look, and surface, and run the Director's Read on each scene to fix its intention and coherent setup - apply this inline for a single clip, and load `[ref:directing-engine]` when scenes diverge or a voice must hold across clips.
 4. If the user is a filmmaker, agency, producer, editor, localization team, or client-review owner, load `[ref:pro-filmmaking-standards]` and collect deliverables, territory, aspect ratio, approval owner, rights, and post/delivery needs.
 5. If the idea is a sequence project, load `[skill:seedance-sequence]` and output a full-story mini-treatment, final story outcome, sequence beat map, continuity bible, first clip contract, first clip prompt, provisional future intent cards, and Project State Capsule.
-6. For standalone work, propose the mini-treatment with switchable assumptions, adjust on reaction, end with a concise creative brief, and route to `[skill:seedance-prompt]`, `[skill:seedance-prompt-short]`, or `[skill:seedance-pipeline]`.
+6. For standalone work, propose the mini-treatment (or proposal cards, when the idea is open-ended) with switchable assumptions, adjust on reaction, end with a concise creative brief, and route to `[skill:seedance-prompt]`, `[skill:seedance-prompt-short]`, or `[skill:seedance-pipeline]` - the final handover follows `[ref:delivery-package]` so the user receives the prompt together with its shot plan, framing, scene, beat plan, and story structure suggestion.
 
 ## Output Contract
 

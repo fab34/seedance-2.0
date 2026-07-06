@@ -28,6 +28,7 @@ Most requests are one short clip from someone who just wants to see their idea. 
 2. Apply craft inline from memory: one visible beat, one motivated camera move, one motivated light source, sound intent, and the directing coherence rule (name one intention; make camera, light, and performance serve it). Load `[ref:directing-engine]`, `[ref:capability-map]`, `[ref:allocation-model]`, and the source or professional gates only when something actually invokes them.
 3. Treat it as one clip: do not ask sequence or continuation questions yet. Raise "should this be a series, part two, or longer" only after the first draft, or when the user says continue, extend, next part, or longer.
 4. Keep the single-clip prompt compact (about 40-110 words) unless the active surface is a verified stricter API, and keep director language (blocking, directorial voice, shot contracts) inside the internal brief - speak to the user in plain words.
+5. Deliver as the compact package from `[ref:delivery-package]`: the prompt plus one line each for camera, framing, scene, and beat, one assumption switch, and one alternate-direction sentence - never a bare prompt string.
 
 Leave the fast lane the instant the request earns a gate: IP/likeness/brand/safety risk goes to the safety gate (step 9); a platform-fact question loads the source gate; a film, client, or delivery request loads the professional gate; a long story, connected clips, or continuation goes to the Sequence Gate. When in doubt about safety, leave the fast lane. The Operating Loop below is the full procedure - the fast lane is the default for the common case, and every gate it skips stays one signal away.
 
@@ -46,9 +47,11 @@ Leave the fast lane the instant the request earns a gate: IP/likeness/brand/safe
 8. Multilingual gate: if the prompt uses Chinese, Russian, Japanese, Korean, Spanish, or code-mixed wording, load `[ref:multilingual-community-examples]` and preserve reference tags exactly. For native Chinese, Japanese, or Korean example-driven requests, route to `[skill:seedance-examples-zh]`, `[skill:seedance-examples-ja]`, or `[skill:seedance-examples-ko]`.
 9. Safety gate: route IP, likeness, voice, brand, real-person, graphic, or evasion-like wording through `[skill:seedance-copyright]` or `[skill:seedance-filter]`.
 10. Direction: before drafting any scene, name one intention and make camera, lens, light, blocking, performance, and sound serve it instead of picking a "cinematic look" - apply this coherence rule inline. Load `[ref:directing-engine]` only when scenes need distinct treatment, one directorial voice must hold across many clips, or the right setup is genuinely unclear.
-11. Prompt build: route to `[skill:seedance-interview]`, `[skill:seedance-prompt]`, `[skill:seedance-prompt-short]`, `[skill:seedance-sequence]`, `[skill:seedance-continuation]`, or a domain skill for camera, motion, lighting, audio, characters, VFX, style, recipes, or pipeline.
-12. Quality pass: run anti-slop and the directing coherence test, then check one visible beat, one primary camera move, physical motivated light, sound intent, continuity anchors, constraints, delivery caveats, and source-date caveats.
-13. Repair loop: when a take returns, triage it with `[ref:retake-protocol]` (keep / fix in post / edit / re-roll / rewrite, one variable per retake, inside an attempt budget); if it fails outright, diagnose root cause before adding adjectives via `[skill:seedance-troubleshoot]`.
+11. Proposal: echo the perceived intent in one sentence, and when the idea is open-ended - the same intent could honestly become two or more different films - present 2-3 contrasting direction proposals with exactly one marked recommended, per `[ref:proposal-kit]`. Skip straight to the brief when the intent is already narrow or the user asked for speed.
+12. Prompt build: route to `[skill:seedance-interview]`, `[skill:seedance-prompt]`, `[skill:seedance-prompt-short]`, `[skill:seedance-sequence]`, `[skill:seedance-continuation]`, or a domain skill for camera, motion, lighting, audio, characters, VFX, style, recipes, or pipeline.
+13. Quality pass: run anti-slop and the directing coherence test, then check one visible beat, one primary camera move, physical motivated light, sound intent, continuity anchors, constraints, delivery caveats, and source-date caveats.
+14. Delivery: hand over the result as a delivery package per `[ref:delivery-package]` - final prompt plus shot/camera plan, framing notes, scene and light, script/beat plan, and a story structure suggestion with the natural growth path - full package for production and sequence work, compact package for fast-lane clips.
+15. Repair loop: when a take returns, triage it with `[ref:retake-protocol]` (keep / fix in post / edit / re-roll / rewrite, one variable per retake, inside an attempt budget); if it fails outright, diagnose root cause before adding adjectives via `[skill:seedance-troubleshoot]`.
 
 ## Sequence Gate
 
@@ -73,6 +76,8 @@ Sequence invariants:
 | Situation | Load |
 |---|---|
 | Vague idea or missing brief | `[skill:seedance-interview]` or `[skill:seedance-interview-short]` |
+| Open-ended idea that could become several different films, or the user asks for suggestions/options | `[ref:proposal-kit]` |
+| Handing over any final prompt: what the deliverable must include (shot plan, framing, scene, beats, structure) | `[ref:delivery-package]` |
 | Long story, connected clips, campaign sequence, dense action/dialogue scene, or a prompt that needs several generations | `[skill:seedance-sequence]`, `[ref:sequence-project-state]`, `[ref:prompt-compiler]` |
 | Continue, extend, next part, repair tail, bridge known states, or re-anchor drift from accepted footage | `[skill:seedance-continuation]`, `[ref:continuation-handoff]`, `[ref:continuity-qc]` |
 | Review a generated take and update canon before the next prompt | `[ref:retake-protocol]`, `[ref:sequence-project-state]`, `[ref:continuation-handoff]` |

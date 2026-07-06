@@ -74,13 +74,14 @@ When the prompt is too long, cut in this order: duplicate style adjectives, gene
 
 ## Output Contract
 
-Return:
+Deliver as a package per `[ref:delivery-package]` - the prompt plus the plan that lets the user see the film before generating it. Return:
 
 1. Mode: T2V, I2V, V2V, R2V, FLF2V, edit, or extend.
 2. Reference role map, if any.
 3. Final prompt under the verified active-surface prompt budget.
 4. Optional Chinese compressed version when useful.
-5. Shot-list or delivery note when the prompt belongs to a professional sequence.
-6. Safety or copyright note when relevant.
+5. The production plan around the prompt: shot and camera plan, framing and composition notes, scene and light, script/beat plan, and a story structure suggestion with the natural growth path - full for production, professional, or sequence work; compact (one line each) for casual single clips. Every part must describe the same film as the prompt.
+6. Shot-list or delivery note when the prompt belongs to a professional sequence.
+7. Safety or copyright note when relevant.
 
-Before finalizing, run an anti-slop pass and remove vague quality boosters.
+Before finalizing, run an anti-slop pass and remove vague quality boosters. The package never inflates the prompt itself: the plan lives around the prompt, and the prompt stays compact.

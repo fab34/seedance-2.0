@@ -49,4 +49,4 @@ Route to `[skill:seedance-sequence]` for connected clips, long scenes, unclear t
 
 ## Output Contract
 
-Return one compact brief under 150 words, any missing high-impact question, and a recommended skill route. If the request is a sequence, include the complete story ending, likely clip count, current clip job, and the fact that future prompts stay provisional until accepted footage is reviewed.
+Return one compact brief under 150 words, any missing high-impact question, and a recommended skill route. Open the brief with a one-sentence intent echo in the user's own words, and when two genuinely different directions exist, add one alternate-direction sentence with the recommended one marked (`[ref:proposal-kit]`) - speed never means silently picking for a user who would have wanted the other film. The downstream prompt is handed over as the compact package from `[ref:delivery-package]`, not a bare prompt string. If the request is a sequence, include the complete story ending, likely clip count, current clip job, and the fact that future prompts stay provisional until accepted footage is reviewed.
